@@ -1,0 +1,6 @@
+---
+applications:
+  - name: test_cf_beta
+    instances: 2
+    command: gunicorn --pythonpath test_cf_beta test_cf_beta.wsgi --log-file=- --preload
+    memory: 128M
